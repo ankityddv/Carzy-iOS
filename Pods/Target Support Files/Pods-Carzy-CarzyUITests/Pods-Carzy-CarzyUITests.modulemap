@@ -1,0 +1,6 @@
+framework module Pods_Carzy_CarzyUITests {
+  umbrella header "Pods-Carzy-CarzyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
