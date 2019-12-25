@@ -19,7 +19,7 @@ class signUpViewController: UIViewController {
     @IBAction func signUpBttn(_ sender: Any) {
         createUser()
     }
-    
+    //
     func createUser() {
         let email = emailFiled.text!
         let password = passwordField.text!
