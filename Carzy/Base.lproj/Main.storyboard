@@ -308,7 +308,7 @@
         <!--Explorer-->
         <scene sceneID="8BP-wo-7o9">
             <objects>
-                <viewController id="lgG-Az-gmW" customClass="HomeViewController" customModule="Carzy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="lgG-Az-gmW" customClass="HomeViewController" customModule="Carzy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dXQ-Ia-pgq">
                         <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -487,10 +487,11 @@
         <!--Custom Tab Bar View Controller-->
         <scene sceneID="QNT-ML-02t">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ck0-WV-3Ii" customClass="CustomTabBarViewController" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="ck0-WV-3Ii" customClass="CustomTabBarViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="O8G-Qz-7EE"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4xA-6c-Agj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="1" green="0.30196078430000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -509,7 +510,7 @@
         <!--What's New-->
         <scene sceneID="esS-do-hGw">
             <objects>
-                <viewController id="3DI-Il-dhl" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="3DI-Il-dhl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="23d-f9-SYw">
                         <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -577,7 +578,7 @@
         <!--Profile-->
         <scene sceneID="all-aN-RTQ">
             <objects>
-                <viewController id="hHt-8U-Rn1" customClass="ProfileViewController" customModule="Carzy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hHt-8U-Rn1" customClass="ProfileViewController" customModule="Carzy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Vb-cZ-fjE">
                         <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -689,7 +690,7 @@
         <!--Search-->
         <scene sceneID="Nzk-DW-sVA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UBB-nS-R7o" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="UBB-nS-R7o" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="srch" id="aZK-k5-Tlb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="52l-4P-nxV">
@@ -720,7 +721,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qTp-YZ-sR7"/>
-        <segue reference="yej-M4-3jM"/>
+        <segue reference="3vX-EG-maN"/>
         <segue reference="VGQ-fL-9FE"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -61,7 +61,7 @@ class signUpViewController: UIViewController {
     func startSpinning() {
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
-        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        //activityIndicator.style = UIActivityIndicatorView.Style.gray
         view.addSubview(activityIndicator)
         
         activityIndicator.startAnimating()
@@ -69,7 +69,7 @@ class signUpViewController: UIViewController {
     }
     func stopSpinning() {
         activityIndicator.stopAnimating()
-        UIApplication.shared.endIgnoringInteractionEvents()
+        //UIApplication.shared.endIgnoringInteractionEvents()
     }
     
     // MARK: - Code below this is for hiding keyboard
