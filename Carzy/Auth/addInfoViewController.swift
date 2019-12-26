@@ -17,6 +17,8 @@ class addInfoViewController: UIViewController {
     var ref:DatabaseReference?
     var selectedImage: UIImage?
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var mobileField: UITextField!
@@ -24,6 +26,9 @@ class addInfoViewController: UIViewController {
     @IBAction func continueBttn(_ sender: Any) {
         updateAllInfo()
         self.performSegue(withIdentifier: "signUp", sender: self)
+        //go to nav bar
+        //let vc = storyboard?.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+        //self.appDelegate.window?.rootViewController = vc
     }
     
     
@@ -36,8 +41,8 @@ class addInfoViewController: UIViewController {
     func updateAllInfo() {
         updateData()
         updateProfileImage()
-        
     }
+    
     func updateProfileImage(){
         
         let storageRef = Storage.storage().reference().child("user/profile_images")
@@ -90,7 +95,7 @@ class addInfoViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardwilchange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
-    // MARK: - Code below this is for hiding keyboard
+    // MARK: - hide/show keyboard
 
         deinit {
             NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -104,8 +109,6 @@ class addInfoViewController: UIViewController {
         
         @objc func keyboardwilchange(notification: Notification){
             view.frame.origin.y = -200
-            //imageView = UIImageView(frame: CGRect(x: 100, y: 150, width: 100, height: 100))
-            //let screenSize: CGRect = UIScreen.main.bounds
             imageView.frame = CGRect(x: 281, y: 258, width: 150, height: 150)
             imageView.layer.cornerRadius = 75
         }
@@ -120,7 +123,6 @@ class addInfoViewController: UIViewController {
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)
             view.frame.origin.y = 0
-            //let screenSize: CGRect = UIScreen.main.bounds
             imageView.layer.cornerRadius = 100
             imageView.frame = CGRect(x: 256, y: 218, width: 200, height: 200)
         }

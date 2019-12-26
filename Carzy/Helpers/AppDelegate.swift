@@ -13,11 +13,38 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+        // Increase Launch Time
+        Thread.sleep(forTimeInterval: 1.5)
+        
+        
+        //check if already logged in
+        
+        if UserDefaults.standard.object(forKey: "KEY_UID") != nil {
+            //logged in
+            self.GoToMain()
+        } else {
+            //not logged in
+            self.GoToStart()
+        }
         return true
+    }
+    
+    func GoToMain(){
+        let mainView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+
+        self.window?.rootViewController = mainView
+    }
+    
+    func GoToStart(){
+        let regView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GetStartedViewController") as! GetStartedViewController
+        
+        self.window?.rootViewController = regView
     }
 
     // MARK: UISceneSession Lifecycle
