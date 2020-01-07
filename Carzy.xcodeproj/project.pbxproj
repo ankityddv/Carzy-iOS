@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36267DF623BA12110053687E /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36267DF523BA12110053687E /* SearchVC.swift */; };
 		3638499F23B131B6003B3684 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3638499E23B131B6003B3684 /* signUpViewController.swift */; };
 		363849A123B131C3003B3684 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363849A023B131C3003B3684 /* logInViewController.swift */; };
 		3661D4F123B151A50021967A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661D4F023B151A50021967A /* ProfileViewController.swift */; };
@@ -17,6 +18,7 @@
 		3685339423B12BC600073415 /* Custom Files in Resources */ = {isa = PBXBuildFile; fileRef = 3685339323B12BC600073415 /* Custom Files */; };
 		3685339623B12BD400073415 /* Custom Font in Resources */ = {isa = PBXBuildFile; fileRef = 3685339523B12BD400073415 /* Custom Font */; };
 		3685339823B12CF500073415 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3685339723B12CF500073415 /* GetStartedViewController.swift */; };
+		36B4D6B723BB5A4B00BAB0DF /* SearchTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B4D6B623BB5A4B00BAB0DF /* SearchTableVC.swift */; };
 		36CC813423B137CD006A498E /* addInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CC813323B137CD006A498E /* addInfoViewController.swift */; };
 		36D5206923B127EF004BBFBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D5206823B127EF004BBFBB /* AppDelegate.swift */; };
 		36D5206B23B127EF004BBFBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D5206A23B127EF004BBFBB /* SceneDelegate.swift */; };
@@ -51,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36267DF523BA12110053687E /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		3638499E23B131B6003B3684 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		363849A023B131C3003B3684 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
 		3661D4F023B151A50021967A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		3685339323B12BC600073415 /* Custom Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Custom Files"; sourceTree = "<group>"; };
 		3685339523B12BD400073415 /* Custom Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Custom Font"; sourceTree = "<group>"; };
 		3685339723B12CF500073415 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		36B4D6B623BB5A4B00BAB0DF /* SearchTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableVC.swift; sourceTree = "<group>"; };
 		36CC813323B137CD006A498E /* addInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addInfoViewController.swift; sourceTree = "<group>"; };
 		36D5206523B127EF004BBFBB /* Carzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D5206823B127EF004BBFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		36267DF723BA12190053687E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				36267DF523BA12110053687E /* SearchVC.swift */,
+				36B4D6B623BB5A4B00BAB0DF /* SearchTableVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		3661066F23B49F1200E9527F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,8 +201,8 @@
 				36E0787023B4B26900BB00D0 /* Helpers */,
 				36CC813223B1362C006A498E /* Auth */,
 				36E0786F23B4B25F00BB00D0 /* Controllers */,
-				3661D4FB23B165760021967A /* SearchTableViewCell.swift */,
 				3661D4F423B15EE30021967A /* SearchViewController.swift */,
+				3661D4FB23B165760021967A /* SearchTableViewCell.swift */,
 				3661066F23B49F1200E9527F /* Views */,
 				36D5207123B127F2004BBFBB /* Assets.xcassets */,
 				36D5207623B127F2004BBFBB /* Info.plist */,
@@ -230,8 +243,9 @@
 		36E0786F23B4B25F00BB00D0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3661D4FA23B164820021967A /* Profile */,
 				36E0786E23B4B20700BB00D0 /* Explorer */,
+				3661D4FA23B164820021967A /* Profile */,
+				36267DF723BA12190053687E /* Search */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -503,6 +517,7 @@
 				36E0786B23B4B13100BB00D0 /* ExplorerViewController.swift in Sources */,
 				366933D023B4917C002BE782 /* ProfileImageViewController.swift in Sources */,
 				3661D4F523B15EE30021967A /* SearchViewController.swift in Sources */,
+				36267DF623BA12110053687E /* SearchVC.swift in Sources */,
 				36D5206B23B127EF004BBFBB /* SceneDelegate.swift in Sources */,
 				3661D4F123B151A50021967A /* ProfileViewController.swift in Sources */,
 				36CC813423B137CD006A498E /* addInfoViewController.swift in Sources */,
@@ -510,6 +525,7 @@
 				3661D4F323B1528A0021967A /* AccountsettingsTableViewCell.swift in Sources */,
 				363849A123B131C3003B3684 /* logInViewController.swift in Sources */,
 				36E0786D23B4B20200BB00D0 /* OneCollectionViewCell.swift in Sources */,
+				36B4D6B723BB5A4B00BAB0DF /* SearchTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
