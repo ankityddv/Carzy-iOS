@@ -20,6 +20,7 @@ class ProfileViewController: UIViewController,UITableViewDelegate,UITableViewDat
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var profileUIView: UIView!
     @IBOutlet weak var logOutBttn: UIButton!
+    @IBOutlet weak var viewImageBttn: UIButton!
     @IBAction func logOutBttn(_ sender: Any) {
         try!Auth.auth().signOut()
         self.performSegue(withIdentifier: "loggedOut", sender: self)
@@ -97,6 +98,7 @@ class ProfileViewController: UIViewController,UITableViewDelegate,UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         logOutBttn.layer.cornerRadius = 10
+        viewImageBttn.layer.cornerRadius = 10
         imageView.layer.cornerRadius = imageView.bounds.height / 2
         imageView.clipsToBounds = true
         addShadow()

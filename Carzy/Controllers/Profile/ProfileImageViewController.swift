@@ -62,6 +62,6 @@ class ProfileImageViewController: UIViewController {
         super.viewDidLoad()
         fetchName()
         fetchProfileImage()
-        profileImageView.layer.cornerRadius = 300
+        profileImageView.layer.cornerRadius = 150
     }
 }

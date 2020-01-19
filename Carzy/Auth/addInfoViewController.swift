@@ -85,7 +85,7 @@ class addInfoViewController: UIViewController {
         let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
         imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(imageTap)
-        imageView.layer.cornerRadius = 100
+        imageView.layer.cornerRadius = 75
             //imageView.bounds.height / 2
         imageView.clipsToBounds = true
         
@@ -109,8 +109,8 @@ class addInfoViewController: UIViewController {
         
         @objc func keyboardwilchange(notification: Notification){
             view.frame.origin.y = -200
-            imageView.frame = CGRect(x: 281, y: 258, width: 150, height: 150)
-            imageView.layer.cornerRadius = 75
+            imageView.frame = CGRect(x: 157, y: 243, width: 100, height: 100)
+            imageView.layer.cornerRadius = 50
         }
         
         //UITextFieldDeligate Methods
@@ -123,8 +123,8 @@ class addInfoViewController: UIViewController {
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)
             view.frame.origin.y = 0
-            imageView.layer.cornerRadius = 100
-            imageView.frame = CGRect(x: 256, y: 218, width: 200, height: 200)
+            imageView.layer.cornerRadius = 75
+            imageView.frame = CGRect(x: 131, y: 173, width: 150, height: 150)
         }
 
     }
